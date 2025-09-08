@@ -1,0 +1,37 @@
+* { 
+
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 90px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('images/bryggen i byen.png');
+    background-color: rgb(25, 25, 25);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.top {
+    margin: 0px;
+    padding: 0px;
+    max-height: 40%;
+    position: relative;
+    top: 10%;
+    text-align: center;
+    flex-shrink: 0; 
+}
+
+.bottom {
+    margin-top: auto;
+}
