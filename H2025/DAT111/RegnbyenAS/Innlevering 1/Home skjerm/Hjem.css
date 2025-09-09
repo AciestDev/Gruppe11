@@ -1,11 +1,9 @@
 * { 
-
     box-sizing: border-box;
     height: 100%;
     margin: 0px;
     padding: 0px;
     font-family: 'Manrope', sans-serif;
-    font-size: 90px;
     color: #FFFFFF;
     text-align: center;
 }
@@ -19,21 +17,45 @@ body {
     background-color: rgb(25, 25, 25);
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
-.top {
-    margin: 0px;
-    padding: 0px;
-    max-height: 40%;
-    position: relative;
-    top: 10%;
+.topBar {
+    max-height: 100px;
+    flex-shrink: 0;
+    background-color: rgb(25, 25, 25);
+}
+
+.titleDiv {
+    max-height: 300px;
+    flex-shrink: 0;
+}
+
+.title {
+    font-size: 90px;
     text-align: center;
-    flex-shrink: 0; 
+    position: relative;
+    top: 40%;
 }
 
+.middle {
+    max-height: 438.4px;
+    flex-shrink: 0;
+}
+
+.oss {
+    font-size: 90px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+
+.kontakt {
+    font-size: 90px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
 .bottom {
-    margin-top: auto;
+    max-height: 300px;
+    flex-shrink: 0;
 }
-
-/* kommentar test */
