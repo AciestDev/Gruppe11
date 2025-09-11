@@ -13,49 +13,64 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url('images/bryggen i byen.png');
     background-color: rgb(25, 25, 25);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .topBar {
-    max-height: 100px;
+    max-height: 10%;
     flex-shrink: 0;
-    background-color: rgb(25, 25, 25);
 }
 
 .titleDiv {
-    max-height: 300px;
     flex-shrink: 0;
+    background-image: url('images/bryggen i byen.png');
+    background-color: rgb(25, 25, 25);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .title {
+    display: flex;
     font-size: 90px;
-    text-align: center;
-    position: relative;
-    top: 40%;
+    justify-content: center;
+    align-items: center;
 }
 
 .middle {
-    max-height: 438.4px;
+    max-height: 80%;
     flex-shrink: 0;
 }
 
 .oss {
+    display: flex;
     font-size: 90px;
-    text-align: center;
-    position: relative;
-    top: 50%;
+    max-height: 40%;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ossTekst {
+    display: flex;
+    font-size: 45px;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    max-height: 60%;
+}
+
+.bottom {
+    max-height: 50%;
+    flex-shrink: 0;
+    background-color: rgb(16, 36, 58);
 }
 
 .kontakt {
+    display: flex;
     font-size: 90px;
-    text-align: center;
-    position: relative;
-    top: 50%;
-}
-.bottom {
-    max-height: 300px;
+    max-height: 40%;
     flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
 }
