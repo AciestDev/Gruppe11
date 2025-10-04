@@ -2,3 +2,5 @@ https://no.wikipedia.org/wiki/Bryggen_i_Bergen
 https://www.google.com/search?q=rain+png&client=firefox-b-d&sca_esv=869b9cc3665700d3&udm=2&biw=2560&bih=1307&ei=WGy4aNiXE6ivwPAPrtqamQw&ved=0ahUKEwjYo9qZgb2PAxWoFxAIHS6tJsMQ4dUDCBE&uact=5&oq=rain+png&gs_lp=Egtnd3Mtd2l6LWltZyIIcmFpbiBwbmcyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESOgQUJ4IWI8PcAF4AJABAJgBSqABmQKqAQE1uAEDyAEA-AEBmAIGoAKvAsICBhAAGAcYHsICBxAAGIAEGAqYAwCIBgGSBwE2oAeDF7IHATW4B6kCwgcFMC4yLjTIBxE&sclient=gws-wiz-img#vhid=dcBntwzGw1_c7M&vssid=mosaic
 
 https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background8
+
+box-sizing: border-box;
