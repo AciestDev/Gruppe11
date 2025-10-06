@@ -105,10 +105,14 @@ h3 {
 
 h4 {
   display: flex;
-  flex-shrink: 1;
-  font-size: 8rem;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(2rem, 5vw, 6rem);
   padding: 2rem;
-  place-self: center;
+  text-align: center;
+  word-wrap: break-word;
+  max-width: 90vw;
+  margin: 0 auto;
 }
 
 h5 {
@@ -158,18 +162,34 @@ main {
   display: flex;
   flex-shrink: 1;
   flex-direction: row;
-  min-height: 95vh;
-  min-width: 75vw;
+  max-width: 80vw;
   padding: 2rem;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.ossTeam1 img {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+.ossTeam1 p {
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 1rem 0;
+  text-align: center;
 }
 
 .eirik {
   display: flex;
   flex-shrink: 1;
   flex-direction: column;
-  max-height: 75vh;
-  max-width: 25vw;
+  align-items: center;
+  flex: 1 1 25%;
+  max-width: 25%;
   padding: 2rem;
 }
 
@@ -177,8 +197,9 @@ main {
   display: flex;
   flex-shrink: 1;
   flex-direction: column;
-  max-height: 75vh;
-  max-width: 25vw;
+  align-items: center;
+  flex: 1 1 25%;
+  max-width: 25%;
   padding: 2rem;
 }
 
@@ -186,35 +207,53 @@ main {
   display: flex;
   flex-shrink: 1;
   flex-direction: column;
-  max-height: 75vh;
-  max-width: 25vw;
+  align-items: center;
+  flex: 1 1 25%;
+  max-width: 25%;
   padding: 2rem;
 }
 
 .ossTeam2 {
   display: flex;
   flex-shrink: 1;
+  flex-wrap: wrap;
   flex-direction: row;
-  min-height: 95vh;
-  min-width: 75vw;
+  max-width: 80vw;
   padding: 2rem;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.ossTeam2 img {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+.ossTeam2 p {
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 1rem;
+  text-align: center;
 }
 
 .sebastian {
   display: flex;
   flex-shrink: 1;
   flex-direction: column;
-  max-height: 75vh;
-  max-width: 25vw;
+  align-items: center;
+  flex: 1 1 30%;
+  max-width: 25%;
   padding: 2rem;
 }
 .thomas {
   display: flex;
   flex-shrink: 1;
   flex-direction: column;
-  max-height: 75vh;
-  max-width: 25vw;
+  align-items: center;
+  flex: 1 1 30%;
+  max-width: 25%;
   padding: 2rem;
 }
 
