@@ -79,6 +79,14 @@ p {
   max-width: 80vw;
 }
 
+h5 {
+  display: flex;
+  flex-shrink: 1;
+  font-size: 8rem;
+  padding: 1rem;
+  place-self: center;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -187,14 +195,6 @@ body.hjem h4 {
   word-wrap: break-word;
   max-width: 90vw;
   margin: 0 auto;
-}
-
-body.hjem h5 {
-  display: flex;
-  flex-shrink: 1;
-  font-size: 8rem;
-  padding: 1rem;
-  place-self: center;
 }
 
 body.hjem p {
