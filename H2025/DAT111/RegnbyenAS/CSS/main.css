@@ -376,9 +376,7 @@ body.bil nav ul {
 }
 
 body.bil main {
-
-  min-height: 300vh;
-  
+  min-height: auto;
 }
 
 body.bil .topp-bil {
@@ -416,6 +414,17 @@ body.bil .topp-bil {
     padding-bottom: 1rem;
 }
 
+.topp-bil-info button {
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: rgb(45, 50, 70);
+}
+
+.topp-bil-info button:hover {
+    background-color: rgb(33, 33, 33);
+    cursor: pointer;
+}
+
 .bunn-bil {
   display: flex;
   flex-direction: row;
@@ -427,6 +436,7 @@ body.bil .topp-bil {
 .bunn-bil h1 {
   font-size: 5rem;
   text-align: left;
+  padding-bottom: 2rem;
 }
 
 body.bil .gallery {
@@ -434,17 +444,22 @@ body.bil .gallery {
   flex-wrap: wrap;
   gap: 10rem;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 body.bil .gallery-item {
   display: flex;
   flex-direction: column;
   text-align: left;
-  
+  background-color: rgb(94, 108, 161);
+  justify-content: center;
+  border-radius: 10px;
+  padding: 1rem;
 }
 
 body.bil .gallery-item img {
   width: 20rem;
+  border-radius: 10px;
 }
 
 body.bil .gallery-item img:hover {
@@ -453,6 +468,15 @@ body.bil .gallery-item img:hover {
 }
 
 body.bil .gallery-item desc {
+  text-align: left;
+  width: 20rem;
+}
+
+body.bil .gallery-item h2 {
+  text-align: left;
+}
+
+body.bil .gallery-item h3 {
   text-align: left;
 }
 
