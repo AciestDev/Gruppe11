@@ -1,0 +1,849 @@
+/* #region felles styling */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Manrope", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-block-start: 10vh;
+}
+
+body {
+  background-color: rgb(25, 25, 25);
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  min-height: 100vh;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 10vh;
+  width: 100vw;
+  background-color: rgb(45, 50, 70);
+  filter: drop-shadow(1rem 1rem 1rem rgb(10, 10, 10));
+  position: fixed;
+  margin-bottom: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  margin-left: auto;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  right: 5rem;
+}
+
+.button-kontakt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  color: black;
+  font-size: 1rem;
+  max-height: 2rem;
+  margin-left: 3rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+a {
+  display: flex;
+  flex-shrink: 1;
+  text-decoration: none;
+}
+
+p {
+  display: flex;
+  flex-shrink: 0;
+  font-size: 4rem;
+  max-width: 80vw;
+}
+
+h5 {
+  display: flex;
+  flex-shrink: 1;
+  font-size: 8rem;
+  padding: 1rem;
+  place-self: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  min-height: 300vh; /* Her er det du endrer størrelsen på hoveddelen */
+  align-items: center;
+}
+
+footer {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  min-height: fit-content;
+  max-width: 100vw;
+  filter: drop-shadow(1rem 1rem 1rem rgb(10, 10, 10));
+  background-color: rgb(45, 50, 70);
+  padding-block: 8px;
+}
+
+.kontakt-div {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 1;
+  font-size: 2rem;
+  line-height: 3rem;
+  gap: 3rem;
+}
+
+.kontakt-info {
+  list-style-type: none;
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.kontakt-andre-sider {
+  list-style-type: none;
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: column;
+  gap: 1rem;
+  cursor: pointer;
+}
+/* #endregion */
+
+/* #region Hjemmesiden */
+
+.hjem {
+  background-color: rgb(25, 25, 25);
+  display: flex;
+  flex-direction: column;
+}
+
+body.hjem header {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  min-height: 100vh;
+  max-width: 100vw;
+  background-image: url("../images/bryggen.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body.hjem header .tittel {
+  display: flex;
+  flex-shrink: 1;
+  min-height: 100vh;
+  max-width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+body.hjem h1 {
+  display: flex;
+  flex-shrink: 1;
+  font-size: 8rem;
+}
+
+body.hjem h2 {
+  display: flex;
+  flex-shrink: 1;
+  font-size: 8rem;
+  padding: 3rem;
+}
+
+body.hjem h3 {
+  display: flex;
+  flex-shrink: 1;
+  font-size: 8rem;
+  padding: 2rem;
+  place-self: center;
+}
+
+body.hjem h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(2rem, 5vw, 6rem);
+  padding: 2rem;
+  text-align: center;
+  word-wrap: break-word;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+body.hjem p {
+  display: flex;
+  flex-shrink: 1;
+  font-size: 1rem;
+  place-self: center;
+  padding: 1rem;
+  line-height: 2rem;
+}
+
+body.hjem img {
+  transition: transform 0.3s ease-in-out;
+}
+
+body.hjem img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+body.hjem main {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  min-height: fit-content;
+  align-items: center;
+}
+
+body.hjem .introTekst {
+  display: flex;
+  flex-shrink: 1;
+  font-size: 4rem;
+  max-width: 80vw;
+  padding: 6rem;
+  line-height: 6rem;
+}
+
+body.hjem .ossTeam1 {
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: row;
+  max-width: 80vw;
+  padding: 2rem;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+body.hjem .ossTeam1 img {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+body.hjem .ossTeam1 p {
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+body.hjem .eirik {
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 25%;
+  max-width: 25%;
+  padding: 2rem;
+}
+
+body.hjem .eivind {
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 25%;
+  max-width: 25%;
+  padding: 2rem;
+}
+
+body.hjem .nicholas {
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 25%;
+  max-width: 25%;
+  padding: 2rem;
+}
+
+body.hjem .ossTeam2 {
+  display: flex;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 80vw;
+  padding: 2rem;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+body.hjem .ossTeam2 img {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+body.hjem .ossTeam2 p {
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 1rem;
+  text-align: center;
+}
+
+body.hjem .sebastian {
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 30%;
+  max-width: 25%;
+  padding: 2rem;
+}
+body.hjem .thomas {
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 30%;
+  max-width: 25%;
+  padding: 2rem;
+}
+
+body.hjem .tilbake {
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: row;
+  min-height: 50vh;
+  min-width: 75vw;
+  padding: 2rem;
+  justify-content: center;
+}
+
+body.hjem .tilbakeImg {
+  max-width: 20vw;
+  padding: 2rem;
+}
+/* #endregion */
+
+/* #region kler */
+
+body.kler header {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  min-height: 100vh;
+  width: 100%;
+}
+
+body.kler nav {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 10vh;
+  max-width: 100vw;
+  background-color: rgb(45, 50, 70);
+  filter: drop-shadow(1rem 1rem 1rem rgb(10, 10, 10));
+  position: fixed;
+  margin-bottom: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+body.kler .tittel {
+  display: flex;
+  flex-shrink: 1;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+body.kler h2 {
+  display: flex;
+  flex-shrink: 1;
+  padding: 2rem;
+  max-width: 80vw;
+  padding-top: 20vh;
+  align-self: center;
+  font-size: 5rem;
+}
+
+body.kler .veret {
+  padding: 1rem;
+  display: flex;
+  flex-shrink: 1;
+  min-height: 100vh;
+  max-width: 100vw;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  background-image: url("../images/tempBildet.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body.kler h3 {
+  display: flex;
+  flex-shrink: 0;
+  font-size: 5rem;
+}
+body.kler h3 {
+  display: flex;
+  flex-shrink: 0;
+  font-size: 8rem;
+  padding: 1rem;
+  place-self: center;
+}
+
+body.kler p {
+  display: flex;
+  flex-shrink: 0;
+  font-size: 4rem;
+  max-width: 80vw;
+}
+
+body.kler main {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  min-height: 300vh;
+  align-items: center;
+}
+
+/* #endregion */
+
+/* #region Bil styling */
+
+body.bil h1 {
+  display: flex;
+  flex-shrink: 1;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+body.bil header {
+  min-height: 10vh;
+}
+
+body.bil nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  margin-left: auto;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  right: 5rem;
+}
+
+body.bil main {
+  min-height: auto;
+}
+
+body.bil .topp-bil {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+}
+  
+.bil-top-img {
+  width: 50%;
+}
+
+/* #endregion */
+    width: 50%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+.topp-bil-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.topp-bil-info h2 {
+  margin-top: 2rem;
+  font-size: 4rem;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+.topp-bil-info p {
+    font-size: 2rem;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.topp-bil-info button {
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: rgb(45, 50, 70);
+}
+
+.topp-bil-info button:hover {
+    background-color: rgb(33, 33, 33);
+    cursor: pointer;
+}
+
+.bunn-bil {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+  min-width: 100%;
+}
+
+.bunn-bil h1 {
+  font-size: 5rem;
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+body.bil .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+body.bil .gallery-item {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: rgb(94, 108, 161);
+  justify-content: center;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+body.bil .gallery-item img {
+  width: 20rem;
+  border-radius: 10px;
+}
+
+body.bil .gallery-item img:hover {
+  width: 25rem;
+  cursor: pointer;
+}
+
+body.bil .gallery-item desc {
+  text-align: left;
+  width: 20rem;
+}
+
+body.bil .gallery-item h2 {
+  text-align: left;
+}
+
+body.bil .gallery-item h3 {
+  text-align: left;
+}
+
+/* #endregion */
+
+/* #region Bolig styling */
+
+body.bolig h1 {
+  display: flex;
+  flex-shrink: 1;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+body.bolig h2{
+  margin-top: 1rem;
+  font-size: 4rem;
+}
+
+body.bolig h3{
+  display: flex;
+  font-size: 3rem;
+}
+
+body.bolig h4{
+  display: flex;
+  font-size: 2rem;
+  padding-left: 2rem;
+  width: fit-content;
+}
+
+body.bolig header {
+  min-height: 10vh;
+}
+
+body.bolig nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  margin-left: auto;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  right: 5rem;
+}
+
+body.bolig p{
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+body.bolig .bolig-div {
+  display: flex;
+  text-align: left;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.bolig-div img {
+  width: 45vw;
+  border-radius: 10px;
+  margin: 0 2rem 0 2rem;
+}
+
+.bolig-div .bolig-desc {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  margin-left: 2rem;
+  width: 50vw;
+}
+
+.bolig-div .bolig-btns {
+  padding-top: 1rem;
+}
+
+.bolig-div button {
+  float: left;
+  margin-right: 2rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  border-color: white;
+  border-style: none;
+}
+
+.bolig-div button:hover {
+  background-color: grey;
+  border-color: grey;
+  cursor: pointer;
+}
+
+.bolig-bunn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  width: 100%;
+  text-align: left;
+}
+
+.bolig-bunn h3 {
+  margin-left: 2rem;
+}
+
+.bolig-bunn .sub-boliger {
+  display: flex;
+  flex-direction: row;
+}
+
+.sub-boliger .main-sub-bolig {
+  text-align: left;
+  size: auto;
+}
+
+.sub-boliger .main-sub-bolig img {
+  width: 55%;
+  border-radius: 10px;
+  margin-left: 2rem;
+}
+
+.sub-boliger .sub-bolig-gruppe {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-bolig-gruppe .sub-bolig {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.sub-bolig-gruppe .sub-bolig img {
+  width: 40%;
+}
+body.aktiv h1 {
+  display: flex;
+  flex-shrink: 1;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+body.aktiv header {
+  min-height: 10vh;
+}
+
+body.aktiv nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  margin-left: auto;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  right: 5rem;
+}
+
+body.aktiv main {
+  min-height: auto;
+}
+
+body.aktiv .topp-aktiv {
+  display: flex;                 
+  flex-direction: row;          
+  align-items: flex-start;
+  text-align: left;
+}
+  
+.aktiv-top-img {
+  width: 50%;
+}
+
+/* #endregion */
+    width: 50%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+.topp-aktiv-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.topp-aktiv-info h2 {
+  margin-top: 2rem;
+  font-size: 4rem;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+body.aktiv p {
+    font-size: 2rem;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.topp-aktiv-info button {
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: rgb(45, 50, 70);
+}
+
+.topp-aktiv-info button:hover {
+    background-color: rgb(33, 33, 33);
+    cursor: pointer;
+}
+
+.bunn-aktiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+  min-width: 100%;
+}
+
+.bunn-aktiv h1 {
+  font-size: 5rem;
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+body.aktiv .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+body.aktiv .gallery-item {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: rgb(94, 108, 161);
+  justify-content: center;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+body.aktiv .gallery-item img {
+  width: 20rem;
+  border-radius: 10px;
+}
+
+body.aktiv .gallery-item img:hover {
+  width: 25rem;
+  cursor: pointer;
+}
+
+body.aktiv .gallery-item desc {
+  text-align: left;
+  width: 20rem;
+}
+
+body.aktiv .gallery-item h2 {
+  text-align: left;
+}
+
+body.aktiv .gallery-item h3 {
+  text-align: left;
+}
+
+/* #endregion */
