@@ -777,9 +777,9 @@ body.aktiv .topp-aktiv {
   text-align: left;
 }
 
-body.aktiv p {
+
 .topp-aktiv-info p {
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: left;
     padding-bottom: 1rem;
 }
@@ -849,6 +849,12 @@ body.aktiv .gallery-item h2 {
 body.aktiv .gallery-item h3 {
   text-align: left;
 }
-
+body.aktiv .gallery-item p {
+	font-size: 2rem;
+}
+body.aktiv p {
+	font-size: 1rem;
+	text-align: left;
+}
 
 /* #endregion */
