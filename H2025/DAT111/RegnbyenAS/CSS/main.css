@@ -354,7 +354,7 @@ body.kler header {
   display: flex;
   flex-direction: column;
   flex-shrink: 1;
-  min-height: 100vh;
+  min-height: 30vh;
   width: 100%;
 }
 
@@ -415,15 +415,18 @@ body.kler h3 {
   display: flex;
   flex-shrink: 0;
   font-size: 8rem;
-  padding: 1rem;
+  padding: 4rem;
   place-self: center;
 }
 
 body.kler p {
   display: flex;
   flex-shrink: 0;
-  font-size: 4rem;
+  font-size: 2rem;
   max-width: 80vw;
+  text-align: left;
+  margin-bottom: 4rem;
+  line-height: 1.5;
 }
 
 body.kler main {
