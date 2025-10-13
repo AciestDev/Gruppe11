@@ -481,3 +481,143 @@ body.bil .gallery-item h3 {
 }
 
 /* #endregion */
+
+/* #region Bolig styling */
+
+body.bolig h1 {
+  display: flex;
+  flex-shrink: 1;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+body.bolig h2{
+  margin-top: 1rem;
+  font-size: 4rem;
+}
+
+body.bolig h3{
+  display: flex;
+  font-size: 3rem;
+}
+
+body.bolig h4{
+  display: flex;
+  font-size: 2rem;
+  padding-left: 2rem;
+  width: fit-content;
+}
+
+body.bolig header {
+  min-height: 10vh;
+}
+
+body.bolig nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  margin-left: auto;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  right: 5rem;
+}
+
+body.bolig p{
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+body.bolig .bolig-div {
+  display: flex;
+  text-align: left;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.bolig-div img {
+  width: 45vw;
+  border-radius: 10px;
+  margin: 0 2rem 0 2rem;
+}
+
+.bolig-div .bolig-desc {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  margin-left: 2rem;
+  width: 50vw;
+}
+
+.bolig-div .bolig-btns {
+  padding-top: 1rem;
+}
+
+.bolig-div button {
+  float: left;
+  margin-right: 2rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  border-color: white;
+  border-style: none;
+}
+
+.bolig-div button:hover {
+  background-color: grey;
+  border-color: grey;
+  cursor: pointer;
+}
+
+.bolig-bunn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  width: 100%;
+  text-align: left;
+}
+
+.bolig-bunn h3 {
+  margin-left: 2rem;
+}
+
+.bolig-bunn .sub-boliger {
+  display: flex;
+  flex-direction: row;
+}
+
+.sub-boliger .main-sub-bolig {
+  text-align: left;
+  size: auto;
+}
+
+.sub-boliger .main-sub-bolig img {
+  width: 55%;
+  border-radius: 10px;
+  margin-left: 2rem;
+}
+
+.sub-boliger .sub-bolig-gruppe {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-bolig-gruppe .sub-bolig {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.sub-bolig-gruppe .sub-bolig img {
+  width: 40%;
+}
+
+
+/* #endregion */
