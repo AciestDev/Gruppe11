@@ -477,13 +477,9 @@ body.bil .topp-bil {
   
 .bil-top-img {
   width: 50%;
-}
-
-/* #endregion */
-    width: 50%;
-    margin-left: 2rem;
-    margin-top: 2rem;
-    border-radius: 10px;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  border-radius: 10px;
 }
 
 .topp-bil-info {
@@ -585,7 +581,7 @@ body.bolig h1 {
   padding-left: 2rem;
 }
 
-body.bolig h2{
+body.bolig h2 {
   margin-top: 1rem;
   font-size: 4rem;
 }
@@ -593,6 +589,7 @@ body.bolig h2{
 body.bolig h3{
   display: flex;
   font-size: 3rem;
+  padding-bottom: 2rem;
 }
 
 body.bolig h4{
@@ -641,10 +638,13 @@ body.bolig .bolig-div {
 .bolig-div .bolig-desc {
   display: flex;
   flex-direction: column;
-  text-align: left;
   justify-content: center;
   margin-left: 2rem;
   width: 50vw;
+}
+
+.bolig-div .bolig-desc p {
+  text-align: left;
 }
 
 .bolig-div .bolig-btns {
@@ -686,13 +686,20 @@ body.bolig .bolig-div {
   flex-direction: row;
 }
 
+.bolig-bunn .sub-boliger p {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
 .sub-boliger .main-sub-bolig {
   text-align: left;
   size: auto;
 }
 
 .sub-boliger .main-sub-bolig img {
-  width: 55%;
+  width: 55vw;
   border-radius: 10px;
   margin-left: 2rem;
 }
@@ -709,7 +716,59 @@ body.bolig .bolig-div {
 }
 
 .sub-bolig-gruppe .sub-bolig img {
+  width: 38.5vw;
+  margin-left: 2rem;
+  border-radius: 10px;
+}
+
+body.bolig .utstyr {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+body.bolig .utstyr .produkt {
+  width: 20%;
+  border-radius: 10px;
+}
+
+body.bolig .utstyr .produkt img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+body.bolig .utstyr .produkt p {
+  font-size: 2rem;
+  text-align: left;
+}
+
+body.bolig .utstyr .produkt strong {
+  display: flex;
+  width: 100%;
+  font-size: 2rem;
+  text-align: left;
+}
+
+body.bolig .utstyr .produkt button {
+  font-size: 1.5rem;
   width: 40%;
+  color: black;
+  margin-top: 1rem;
+  background-color: white;
+  border-color: white;
+  border-style: none;
+  border-radius: 5px;
+  padding: 0.2rem;
+}
+
+body.bolig .utstyr .produkt button:hover {
+  font-size: 1.5rem;
+  color: black;
+  background-color: grey;
+  border-color: grey;
+  cursor: pointer;
 }
 
 
