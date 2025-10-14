@@ -348,7 +348,7 @@ body.kler header {
   display: flex;
   flex-direction: column;
   flex-shrink: 1;
-  min-height: 100vh;
+  min-height: 30vh;
   width: 100%;
 }
 
@@ -408,15 +408,18 @@ body.kler h3 {
   display: flex;
   flex-shrink: 0;
   font-size: 8rem;
-  padding: 1rem;
+  padding: 4rem;
   place-self: center;
 }
 
 body.kler p {
   display: flex;
   flex-shrink: 0;
-  font-size: 4rem;
+  font-size: 2rem;
   max-width: 80vw;
+  text-align: left;
+  margin-bottom: 4rem;
+  line-height: 1.5;
 }
 
 body.kler main {
@@ -519,9 +522,7 @@ body.bil nav ul {
 }
 
 body.bil main {
-
-  min-height: 300vh;
-  
+  min-height: auto;
 }
 
 body.bil .topp-bil {
@@ -533,12 +534,9 @@ body.bil .topp-bil {
   
 .bil-top-img {
   width: 50%;
-}
-
-/* #endregion */
-    width: 50%;
-    padding-left: 2rem;
-    padding-top: 2rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  border-radius: 10px;
 }
 
 .topp-bil-info {
@@ -546,20 +544,430 @@ body.bil .topp-bil {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+  margin-left: 2rem;
 }
 
-.topp-bil-info h1 {
-    padding-top: 2rem;
-    font-size: 4rem;
-    padding-bottom: 1rem;
+.topp-bil-info h2 {
+  margin-top: 2rem;
+  font-size: 4rem;
+  padding-bottom: 1rem;
+  text-align: left;
 }
 
 .topp-bil-info p {
-    padding-left: 2rem;
     font-size: 2rem;
     text-align: left;
     padding-bottom: 1rem;
 }
 
+.topp-bil-info button {
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: rgb(45, 50, 70);
+}
+
+.topp-bil-info button:hover {
+    background-color: rgb(33, 33, 33);
+    cursor: pointer;
+}
+
+.bunn-bil {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+  min-width: 100%;
+}
+
+.bunn-bil h1 {
+  font-size: 5rem;
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+body.bil .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+body.bil .gallery-item {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: rgb(94, 108, 161);
+  justify-content: center;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+body.bil .gallery-item img {
+  width: 20rem;
+  border-radius: 10px;
+}
+
+body.bil .gallery-item img:hover {
+  width: 25rem;
+  cursor: pointer;
+}
+
+body.bil .gallery-item desc {
+  text-align: left;
+  width: 20rem;
+}
+
+body.bil .gallery-item h2 {
+  text-align: left;
+}
+
+body.bil .gallery-item h3 {
+  text-align: left;
+}
+
+/* #endregion */
+
+/* #region Bolig styling */
+
+body.bolig h1 {
+  display: flex;
+  flex-shrink: 1;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+body.bolig h2 {
+  margin-top: 1rem;
+  font-size: 4rem;
+}
+
+body.bolig h3{
+  display: flex;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+body.bolig h4{
+  display: flex;
+  font-size: 2rem;
+  padding-left: 2rem;
+  width: fit-content;
+}
+
+body.bolig header {
+  min-height: 10vh;
+}
+
+body.bolig nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  margin-left: auto;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  right: 5rem;
+}
+
+body.bolig p{
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+body.bolig .bolig-div {
+  display: flex;
+  text-align: left;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.bolig-div img {
+  width: 45vw;
+  border-radius: 10px;
+  margin: 0 2rem 0 2rem;
+}
+
+.bolig-div .bolig-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+  width: 50vw;
+}
+
+.bolig-div .bolig-desc p {
+  text-align: left;
+}
+
+.bolig-div .bolig-btns {
+  padding-top: 1rem;
+}
+
+.bolig-div button {
+  float: left;
+  margin-right: 2rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  border-color: white;
+  border-style: none;
+}
+
+.bolig-div button:hover {
+  background-color: grey;
+  border-color: grey;
+  cursor: pointer;
+}
+
+.bolig-bunn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  width: 100%;
+  text-align: left;
+}
+
+.bolig-bunn h3 {
+  margin-left: 2rem;
+}
+
+.bolig-bunn .sub-boliger {
+  display: flex;
+  flex-direction: row;
+}
+
+.bolig-bunn .sub-boliger p {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.sub-boliger .main-sub-bolig {
+  text-align: left;
+  size: auto;
+}
+
+.sub-boliger .main-sub-bolig img {
+  width: 55vw;
+  border-radius: 10px;
+  margin-left: 2rem;
+}
+
+.sub-boliger .sub-bolig-gruppe {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-bolig-gruppe .sub-bolig {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.sub-bolig-gruppe .sub-bolig img {
+  width: 38.5vw;
+  margin-left: 2rem;
+  border-radius: 10px;
+}
+
+body.bolig .utstyr {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+body.bolig .utstyr .produkt {
+  width: 20%;
+  border-radius: 10px;
+}
+
+body.bolig .utstyr .produkt img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+body.bolig .utstyr .produkt p {
+  font-size: 2rem;
+  text-align: left;
+}
+
+body.bolig .utstyr .produkt strong {
+  display: flex;
+  width: 100%;
+  font-size: 2rem;
+  text-align: left;
+}
+
+body.bolig .utstyr .produkt button {
+  font-size: 1.5rem;
+  width: 40%;
+  color: black;
+  margin-top: 1rem;
+  background-color: white;
+  border-color: white;
+  border-style: none;
+  border-radius: 5px;
+  padding: 0.2rem;
+}
+
+body.bolig .utstyr .produkt button:hover {
+  font-size: 1.5rem;
+  color: black;
+  background-color: grey;
+  border-color: grey;
+  cursor: pointer;
+}
+body.aktiv h1 {
+  display: flex;
+  flex-shrink: 1;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+body.aktiv header {
+  min-height: 10vh;
+}
+
+body.aktiv nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  margin-left: auto;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  right: 5rem;
+}
+
+body.aktiv main {
+  min-height: auto;
+}
+
+body.aktiv .topp-aktiv {
+  display: flex;                 
+  flex-direction: row;          
+  align-items: flex-start;
+  text-align: left;
+}
+  
+.aktiv-top-img {
+  width: 50%;
+}
+
+/* #endregion */
+    width: 50%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+.topp-aktiv-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.topp-aktiv-info h2 {
+  margin-top: 2rem;
+  font-size: 4rem;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+
+.topp-aktiv-info p {
+    font-size: 1rem;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.topp-aktiv-info button {
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: rgb(45, 50, 70);
+}
+
+.topp-aktiv-info button:hover {
+    background-color: rgb(33, 33, 33);
+    cursor: pointer;
+}
+
+.bunn-aktiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+  min-width: 100%;
+}
+
+.bunn-aktiv h1 {
+  font-size: 5rem;
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+body.aktiv .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+body.aktiv .gallery-item {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: rgb(94, 108, 161);
+  justify-content: center;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+body.aktiv .gallery-item img {
+  width: 20rem;
+  border-radius: 10px;
+}
+
+body.aktiv .gallery-item img:hover {
+  width: 25rem;
+  cursor: pointer;
+}
+
+body.aktiv .gallery-item desc {
+  text-align: left;
+  width: 20rem;
+}
+
+body.aktiv .gallery-item h2 {
+  text-align: left;
+}
+
+body.aktiv .gallery-item h3 {
+  text-align: left;
+}
+body.aktiv .gallery-item p {
+	font-size: 2rem;
+}
+body.aktiv p {
+	font-size: 1rem;
+	text-align: left;
+}
 
 /* #endregion */
