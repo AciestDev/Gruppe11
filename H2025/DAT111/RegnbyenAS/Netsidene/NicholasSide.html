@@ -2,58 +2,57 @@
 <html>
   <head>
     <title>RB AS</title>
-    <link rel="stylesheet" href="../CSS/mal.css" />
-    <!-- etter kopi inni din egen side. Ikke glem å endre stylesheeten til den du jobber med -->
+    <link rel="stylesheet" href="../CSS/main.css" />
   </head>
 
-  <body>
-    <header>
+  <body class = "Nich">
+    <header id="toppen">
       <nav>
-        <h1 class="tittel">Tittel på siden</h1>
-        <!-- LA STÅ! Bare endre tittelen til din tittel på side -->
+        <h1 class="tittel"> Teknisk Direktør </h1>
         <ul>
-          <li><a href="#HvorKnappenSkalGå"> Hva knappen heter </a></li>
-          <!-- eksempel på knapp (Se main) -->
-          <!-- Her legger du til flere knapper OBS: Kontakt oss burde være sist i denne "ul" listen. Prøv selv og se hva jeg mener-->
+          <li><a href=".\Hjem.html"> Tilbake til hjemmesiden </a></li>
+          <li><a href=".\BergenKler.html"> Bergen vær og klær </a></li>
+          <li><a href=".\BergenBolig.html"> Bergen bolig og snodig </a></li>
+          <li><a href=".\BergenBil.html"> Bergen bil med stil </a></li>
+          <li><a href=".\BergenAktiviteter.html"> Bergen aktiviteter og leker </a></li>
           <a href="#kontakt" class="button-kontakt"> Kontakt oss! </a>
-          <!-- La stå! -->
         </ul>
       </nav>
 
-      <h1 class="tittel2" id="toppen">Mulig topp seksjon (Velg selv)</h1>
-      <!-- Legg til "id (toppen)" til ditt øverste div element eller lignende -->
+      <div class = "topDel"> 
+        <div class = "intro"> 
+          <h2> Hi <br> I am Nich </h2>
+        <img src ="../images/Nicholas.jpeg" alt = "Bildet virker ikke"></img>
+        </div>
+      </div> 
     </header>
 
     <main>
-      <h2>
-        <a id="HvorKnappenSkalGå">
-          En sub tittel på et sted som evt kan sendes til ved top bar lenke
-        </a>
-      </h2>
-
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam facere
-        perferendis fugit non dolore beatae eius ipsum. Cum omnis quidem ut a
-        facilis dolore aliquid, ad necessitatibus nesciunt quasi optio.
-      </p>
+      
+      <div class = "hovedDel"> 
+        <div class = "intro">
+          <p> I play <br> volleyball </p>
+          <img src = "../images/VolleyballDude.jpg" alt = "Bildet virker ikke"></img>
+        </div>
+      </div>
     </main>
 
-    <!-- LA STÅ! KUN ENDRE LISTEN TIL ANDRE SIDER-->
     <footer>
-      <h3><a id="kontakt"> Kontakt oss! </a></h3>
+      <h5><a id="kontakt"> Kontakt oss! </a></h5>
 
       <div class="kontakt-div">
         <ul class="kontakt-info">
-          <li><a href="mailto:RegnbyenBergen@gmail.com">RegnbyenBergen@gmail.com</a></li>
+          <li>RegnbyenBergen@gmail.com</li>
           <li>+47 58008420</li>
           <li><a href="#toppen"> Ta meg tilbake til toppen </a></li>
         </ul>
 
-        <!-- Her kan du endre på listen slik at de går til de andre sidene (hvis du har flere) -->
         <ul class="kontakt-andre-sider">
+          <li><a href=".\Hjem.html"> Tilbake til hjemmesiden </a></li>
           <li><a href=".\BergenKler.html"> Bergen vær og klær </a></li>
           <li><a href=".\BergenBolig.html"> Bergen bolig og snodig </a></li>
           <li><a href=".\BergenBil.html"> Bergen bil med stil </a></li>
+          <li><a href=".\BergenAktiviteter.html"> Bergen aktiviteter og leker </a></li>
         </ul>
       </div>
     </footer>
