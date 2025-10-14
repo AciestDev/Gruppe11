@@ -380,13 +380,12 @@ body.kler h2 {
   flex-shrink: 1;
   padding: 2rem;
   max-width: 80vw;
-  padding-top: 20vh;
   align-self: center;
   font-size: 5rem;
 }
 
 body.kler .veret {
-  padding: 1rem;
+  padding-top: 100vh;
   display: flex;
   flex-shrink: 1;
   min-height: 100vh;
@@ -394,7 +393,7 @@ body.kler .veret {
   justify-content: center;
   align-items: center;
   padding-left: 2rem;
-  background-image: url("../images/tempBildet.png");
+  background-image: url("https://www.yr.no/nb/innhold/1-92416/meteogram.svg?mode=dark");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
