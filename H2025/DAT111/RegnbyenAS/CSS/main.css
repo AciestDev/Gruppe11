@@ -701,6 +701,11 @@ body.bolig .bolig-div {
   size: auto;
 }
 
+.sub-boliger .main-sub-bolig p {
+  text-align: left;
+  size: auto;
+}
+
 .sub-boliger .main-sub-bolig img {
   width: 55vw;
   border-radius: 10px;
@@ -722,6 +727,10 @@ body.bolig .bolig-div {
   width: 38.5vw;
   margin-left: 2rem;
   border-radius: 10px;
+}
+
+.sub-bolig-gruppe .sub-bolig p {
+  text-align: left;
 }
 
 body.bolig .utstyr {
@@ -815,11 +824,91 @@ body.aktiv .topp-aktiv {
 }
 
 /* #endregion */
-    width: 50%;
-    margin-left: 2rem;
-    margin-top: 2rem;
-    border-radius: 10px;
+
+/* #region Eivind styling */
+
+
+body.eivind h1 {
+  margin-left: 2rem;
+  max-width: 100%;
 }
+
+body.eivind p{
+  margin-top: 4rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+body.eivind .bilde-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body.eivind header{
+  min-height: 10vh;
+}
+
+body.eivind .hoved-tittel{
+  margin-top: 4rem;
+  font-size: 5rem;
+}
+
+body.eivind .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+body.eivind .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+body.eivind .gallery-item {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: rgb(29, 34, 52);
+  justify-content: center;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+body.eivind .gallery-item img {
+  width: 20rem;
+  border-radius: 10px;
+}
+
+body.eivind .gallery-item desc {
+  text-align: center;
+  width: 20rem;
+}
+
+body.eivind table {
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 1rem;
+}
+
+body.eivind table tr {
+  text-align: left;
+}
+
+body.eivind table tr th {
+  text-align: left;
+}
+
+body.eivind table tr td {
+  text-align: left;
+}
+
+/* #endregion*/
 
 .topp-aktiv-info {
   display: flex;
