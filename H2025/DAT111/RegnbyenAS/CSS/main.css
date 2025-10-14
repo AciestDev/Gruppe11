@@ -434,11 +434,9 @@ body.kler main {
 
 /* #region Nicholas Side */
 
-/*
-body.Nich header {
+body.Nich {
+  box-sizing: border-box;
 }
-*/
-
 body.Nich img {
   object-fit: contain;
   max-width: 400px;
@@ -446,17 +444,26 @@ body.Nich img {
   display: flex;
   padding-left: 5rem;
 }
+
+body.Nich header {
+  display: flex;
+  flex-shrink: 1;
+  min-height: fit-content;
+  max-width: 100vw;
+}
+
 body.Nich header .topDel {
   display: flex;
   flex-shrink: 1;
   padding-top: 10vh;
-  min-height: 90vh;
+  min-height: 150vh;
   max-width: 100vw;
   justify-content: center;
   align-items: center;
 }
 
 body.Nich header .intro {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -489,6 +496,8 @@ body.Nich main {
 
 body.Nich .hovedDel {
   max-height: 100vh;
+  display: flex;
+  flex-shrink: 1;
 }
 
 /* #endregion */
@@ -853,6 +862,9 @@ body.aktiv nav ul {
   right: 5rem;
 }
 
+body.aktiv h2 {
+  padding-top: 15vh;
+}
 body.aktiv main {
   min-height: auto;
 }
@@ -870,6 +882,7 @@ body.aktiv .topp-aktiv {
 
 /* #endregion */
 
+/* #region aktiv */
 .topp-aktiv-info {
   display: flex;
   flex-direction: column;
@@ -963,5 +976,13 @@ body.aktiv p {
   font-size: 1rem;
   text-align: left;
 }
+
+/* #endregion */
+
+/* #region ppl */
+
+body.ppl h2 {
+  padding-top: 30vh;
+} 
 
 /* #endregion */
