@@ -5,6 +5,7 @@
   font-family: "Manrope", sans-serif;
   color: #ffffff;
   text-align: center;
+  box-sizing: border-box;
 }
 
 html {
@@ -93,7 +94,7 @@ main {
   display: flex;
   flex-direction: column;
   flex-shrink: 1;
-  max-height: fit-content; 
+  max-height: fit-content;
   align-items: center;
 }
 
@@ -190,6 +191,7 @@ body.hjem h4 {
   display: flex;
   font-size: 6rem;
   flex-shrink: 1;
+  place-self: center;
 }
 
 body.hjem p {
@@ -231,10 +233,9 @@ body.hjem .ossTeam1 {
   display: flex;
   flex-shrink: 1;
   flex-direction: row;
-  max-width: 80vw;
   padding: 2rem;
-  justify-content: space-around;
   align-items: flex-start;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -287,7 +288,6 @@ body.hjem .ossTeam2 {
   flex-shrink: 1;
   flex-wrap: wrap;
   flex-direction: row;
-  max-width: 80vw;
   padding: 2rem;
   align-items: flex-start;
   justify-content: space-around;
@@ -531,7 +531,7 @@ body.bil .topp-bil {
   align-items: flex-start;
   text-align: left;
 }
-  
+
 .bil-top-img {
   width: 50%;
   margin-left: 2rem;
@@ -555,20 +555,20 @@ body.bil .topp-bil {
 }
 
 .topp-bil-info p {
-    font-size: 2rem;
-    text-align: left;
-    padding-bottom: 1rem;
+  font-size: 2rem;
+  text-align: left;
+  padding-bottom: 1rem;
 }
 
 .topp-bil-info button {
-    font-size: 2rem;
-    border-radius: 5px;
-    background-color: rgb(45, 50, 70);
+  font-size: 2rem;
+  border-radius: 5px;
+  background-color: rgb(45, 50, 70);
 }
 
 .topp-bil-info button:hover {
-    background-color: rgb(33, 33, 33);
-    cursor: pointer;
+  background-color: rgb(33, 33, 33);
+  cursor: pointer;
 }
 
 .bunn-bil {
@@ -643,13 +643,13 @@ body.bolig h2 {
   font-size: 4rem;
 }
 
-body.bolig h3{
+body.bolig h3 {
   display: flex;
   font-size: 3rem;
   padding-bottom: 2rem;
 }
 
-body.bolig h4{
+body.bolig h4 {
   display: flex;
   font-size: 2rem;
   padding-left: 2rem;
@@ -674,7 +674,7 @@ body.bolig nav ul {
   right: 5rem;
 }
 
-body.bolig p{
+body.bolig p {
   margin-top: 2rem;
   font-size: 2rem;
 }
@@ -858,22 +858,17 @@ body.aktiv main {
 }
 
 body.aktiv .topp-aktiv {
-  display: flex;                 
-  flex-direction: row;          
+  display: flex;
+  flex-direction: row;
   align-items: flex-start;
   text-align: left;
 }
-  
+
 .aktiv-top-img {
   width: 50%;
 }
 
 /* #endregion */
-    width: 50%;
-    margin-left: 2rem;
-    margin-top: 2rem;
-    border-radius: 10px;
-}
 
 .topp-aktiv-info {
   display: flex;
@@ -890,22 +885,21 @@ body.aktiv .topp-aktiv {
   text-align: left;
 }
 
-
 .topp-aktiv-info p {
-    font-size: 1rem;
-    text-align: left;
-    padding-bottom: 1rem;
+  font-size: 1rem;
+  text-align: left;
+  padding-bottom: 1rem;
 }
 
 .topp-aktiv-info button {
-    font-size: 2rem;
-    border-radius: 5px;
-    background-color: rgb(45, 50, 70);
+  font-size: 2rem;
+  border-radius: 5px;
+  background-color: rgb(45, 50, 70);
 }
 
 .topp-aktiv-info button:hover {
-    background-color: rgb(33, 33, 33);
-    cursor: pointer;
+  background-color: rgb(33, 33, 33);
+  cursor: pointer;
 }
 
 .bunn-aktiv {
@@ -963,11 +957,11 @@ body.aktiv .gallery-item h3 {
   text-align: left;
 }
 body.aktiv .gallery-item p {
-	font-size: 2rem;
+  font-size: 2rem;
 }
 body.aktiv p {
-	font-size: 1rem;
-	text-align: left;
+  font-size: 1rem;
+  text-align: left;
 }
 
 /* #endregion */
