@@ -824,12 +824,10 @@ body.bolig .bolig-div {
 
 .sub-boliger .main-sub-bolig {
   text-align: left;
-  size: auto;
 }
 
 .sub-boliger .main-sub-bolig p {
   text-align: left;
-  size: auto;
 }
 
 .sub-boliger .main-sub-bolig img {
@@ -1144,6 +1142,26 @@ body.aktiv p {
 }
 
 /* #endregion */
+
+/* #region python */
+
+.pyt h1 {
+  padding-left: 2rem;
+}
+
+.pyt img {
+  padding-top: 7rem;
+  width: 70%;
+}
+
+.pyt p {
+  margin-top: 3rem;
+  font-size: 2rem;
+  text-align: left;
+  margin-bottom: 7rem;
+}
+
+/* #endregion*/
 
 /* #region ppl */
 
